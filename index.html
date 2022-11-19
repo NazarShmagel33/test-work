@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-work</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media.css">
+</head>
+<body>
+            <div class="grid-wrapper">
+                    <div class="column-form">
+                        <div class="column-form__title">
+                            Contact Us
+                        </div>
+                        
+                        <div class="column-form__subtitle">
+                            The Voodoo team is looking forward to hearing from you!
+                        </div>
+                        <div class="column-form__form">
+                            <form action="#" class="send">
+                                <div class="send__wrapper">
+                                    <input type="text" name="name" placeholder="Full Name*" class="send__input">
+                                    <input type="text" name="position" placeholder="Title/Position*" class="send__input">
+                                    <div class="select  send__input">
+                                        <div class="select__header">
+                                            <span class="select__current">Practice / Institution*</span>
+                                            <div class="select__icon">&times;</div>
+                                        </div>
+                                    
+                                        <div class="select__body">
+                                            <div class="select__item" data-value="1">Option 1</div>
+                                            <div class="select__item" data-value="2">Option 2</div>
+                                            <div class="select__item" data-value="3">Option 3</div>
+                                            <div class="select__item" data-value="4">Option 4</div>
+                                            <div class="select__item" data-value="5">Option 5</div>
+                                        </div>
+                                    </div>
+                                    
+                                <input type="text" name="Email" placeholder="Email Address*" class="send__input">
+                                <input type="text" name="tel" placeholder="Phone Number*" class="send__input">
+                                <div class="select  send__input">
+                                    <div class="select__header">
+                                        <span class="select__current">Medical Profession*</span>
+                                        <div class="select__icon">&times;</div>
+                                    </div>
+                                
+                                    <div class="select__body">
+                                        <div class="select__item" data-value="1">Option 1</div>
+                                        <div class="select__item" data-value="2">Option 2</div>
+                                        <div class="select__item" data-value="3">Option 3</div>
+                                        <div class="select__item" data-value="4">Option 4</div>
+                                        <div class="select__item" data-value="5">Option 5</div>
+                                    </div>
+                                </div>
+                                <input type="text" name="tel" placeholder="Type of Inquiry*" class="send__input input-long">
+                                
+                                </div>
+                                <textarea name="textarea" id="" class="send__input send__textarea" placeholder="Enter Message*" style="resize: none;"></textarea>
+                                <input type="submit" value="Send Message" class="btn">
+                                
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="column-map">
+                        
+                        <div id="googleMap">
+                       
+                        </div>
+                         <div class="column-map__info">
+                            <div class="column-map__info-title">Voodoo </div>
+                            <div class="column-map__info-adress">137 Glasgow St., Unit 115 Kitchener, ON N2G 4X8 Ukraine</div>
+                            <div class="column-map__info-tel">1-800-480-9597</div>
+                            <div class="column-map__info-email">info@voodoo.com</div>
+                        </div>
+                    
+                    </div>
+            </div>
+                
+
+                <script>
+                function myMap() {
+                var opt= {
+                center:new google.maps.LatLng(50.439022,30.523167),
+                zoom:   17,
+                disableDefaultUI: true,
+
+                };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"),opt);
+                var marker = new google.maps.Marker({
+                    position:{ lat: 50.439022, lng: 30.523167 },
+                    icon:'icon/Vector.png',
+                    });
+                    marker.setMap(map);
+                }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=myMap"></script>
+                <script src="/script.js"></script>
+>
+                
+</body> 
+</html>
